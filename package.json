@@ -1,0 +1,43 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "cross-env NODE_ENV=development webpack --watch --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+        "@babel/plugin-proposal-class-properties": "^7.14.5",
+        "@babel/plugin-proposal-decorators": "^7.14.5",
+        "@types/jquery": "^3.5.6",
+        "@types/lodash": "^4.14.172",
+        "@types/popper.js": "^1.11.0",
+        "axios": "^0.19",
+        "babel-core": "^6.26.3",
+        "babel-loader": "^8.2.2",
+        "babel-preset-env": "^1.7.0",
+        "bootstrap": "^4.5.3",
+        "bootstrap-vue": "^2.21.2",
+        "cross-env": "^7.0",
+        "jquery": "^3.6.0",
+        "laravel-mix": "^6.0.6",
+        "lodash": "^4.17.13",
+        "popper": "^1.0.1",
+        "resolve-url-loader": "^3.1.0",
+        "sass": "^1.15.2",
+        "sass-loader": "^8.0.0",
+        "ts-loader": "^9.2.5",
+        "typescript": "^4.3.5",
+        "vue": "^2.6.14",
+        "vue-class-component": "^7.2.6",
+        "vue-loader": "^15.9.7",
+        "vue-moment": "^4.1.0",
+        "vue-template-compiler": "^2.6.14"
+    },
+    "dependencies": {
+        "vue-property-decorator": "^9.1.2"
+    }
+}

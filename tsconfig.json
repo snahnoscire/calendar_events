@@ -1,0 +1,31 @@
+// tsconfig.json
+{
+    "compilerOptions": {
+        "target": "es5",
+        "strict": true,
+        "module": "es2015",
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": ".",
+        "paths": {
+            "@/*": [
+                "./resources/assets/js/*"
+            ]
+        },
+        "importsNotUsedAsValues": "error",
+        "noImplicitAny": false
+    },
+    "resolve": {
+        "extension": [ "*", ".js", ".ts", ".vue" ],
+        "alias": {
+            // If using the runtime only build
+//            "vue$": "vue/dist/vue.runtime.esm.js" // 'vue/dist/vue.runtime.common.js' for webpack 1
+            // Or if using full build of Vue (runtime + compiler)
+             "vue$": "vue/dist/vue.esm.js"      // 'vue/dist/vue.common.js' for webpack 1
+        }
+    },
+    "include": [
+        "resources/assets/js/**/*"
+    ]
+}
