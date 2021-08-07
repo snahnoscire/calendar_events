@@ -74,7 +74,7 @@
                     <b-dropdown-item-button @click="currentMonth = 11">November</b-dropdown-item-button>
                     <b-dropdown-item-button @click="currentMonth = 12">December</b-dropdown-item-button>
                 </b-dropdown>
-                <strong>2020</strong>
+                <strong>{{$moment().format('YYYY')}}</strong>
                 <b-list-group>
                     <b-list-group-item v-for="date in daysThisMonth" :key="date.event_date">
                         <b-row class="p-2">
